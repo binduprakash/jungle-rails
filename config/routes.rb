@@ -18,6 +18,12 @@ Rails.application.routes.draw do
     resources :categories
   end
 
+  get '/register' => 'users#register'
+  post '/users' => 'users#create'
+  get '/signin' => 'sessions#signin'
+  post '/signin' => 'sessions#create'
+  get '/signout' => 'sessions#signout'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
