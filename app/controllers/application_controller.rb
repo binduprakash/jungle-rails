@@ -37,5 +37,4 @@ class ApplicationController < ActionController::Base
   def authorize
     redirect_to '/signin' unless current_user
   end
-
 end
